@@ -5,9 +5,12 @@
 }
 </style>
 <template>
+	<div style="height:500px;overflow: scroll;">
 	<div class="test2">
 		<div>test222</div>
 		<div @click="back">back111</div>
+
+	</div>
 	</div>
 </template>
 <script>
