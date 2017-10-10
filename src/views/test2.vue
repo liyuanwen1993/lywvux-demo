@@ -2,6 +2,7 @@
 .test2{
 	background-color: blue;
 	height: 1000px;
+	font-size: 0.28rem;
 }
 </style>
 <template>
@@ -9,7 +10,7 @@
 	<div class="test2">
 		<div>test222</div>
 		<div @click="back">back111</div>
-
+		<div @click="btn">111111</div>
 	</div>
 	</div>
 </template>
@@ -27,6 +28,9 @@
 	  	methods:{
 	  		back(){
 	  			this.$router.goBack(1);
+	  		},
+	  		btn(){
+	  			this.util1.$emit('test')
 	  		}
 	  	}
 	}

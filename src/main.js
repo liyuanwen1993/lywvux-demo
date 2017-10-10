@@ -7,11 +7,11 @@ import App from './App'
 import Home from './components/HelloFromVux'
 import router from './router/index'
 import './common/common.js'
+import util from './common/util.js'
 Vue.use(VueRouter)
 import Vuex from 'vuex'
-
+Vue.prototype.util1=util;
 Vue.use(Vuex)
-
 
 
 const store = new Vuex.Store({
